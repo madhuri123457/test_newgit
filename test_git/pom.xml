@@ -39,6 +39,7 @@
          <username>madhuri1501</username>
          <password>Rohan@123</password>
          <environment>Sandbox</environment>
+         <domain>${project.basedir}/domain</domain>
          <workers>1</workers>
                </cloudHubDeployment>
    </configuration>
