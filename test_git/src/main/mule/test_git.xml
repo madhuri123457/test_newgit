@@ -14,29 +14,5 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<logger level="INFO" doc:name="Logger" doc:id="3e8f6133-edaa-4b93-aee1-eb297fba8d4d" />
 	</flow>
 	
-	<plugin>
-   <groupId>org.mule.tools.maven</groupId>
-   <artifactId>mule-maven-plugin</artifactId>
-   <version>3.3.5</version>
-   <extensions>true</extensions>
-   <configuration>
-      <cloudHubDeployment>
-         <uri>https://anypoint.mulesoft.com</uri>
-         <muleVersion>4.3.0</muleVersion>
-         <username>madhuri1501</username>
-         <password>Rohan@123</password>
-         
-         <environment>Sandbox</environment>
-         <workers>1</workers>
-         <workerType>${workerType}</workerType>
-      </cloudHubDeployment>
-   </configuration>
-   <executions>
-      <execution>
-         <goals>
-            <goal>deploy</goal>
-         </goals>
-      </execution>
-   </executions>
-</plugin>
+	
 </mule>
