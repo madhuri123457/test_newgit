@@ -25,31 +25,28 @@
 				<artifactId>maven-clean-plugin</artifactId>
 				<version>3.0.0</version>
 				
-</plugin>
-			
-			<plugin>
+            </plugin>
+		    <plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
                     <cloudHubDeployment>
-         <uri>https://anypoint.mulesoft.com</uri>
-         <muleVersion>4.3.0</muleVersion>
-         <username>madhuri1501</username>
-         <password>Rohan@123</password>
-         <environment>Sandbox</environment>
-         <domain>${project.basedir}/domain</domain>
-         <workers>1</workers>
-               </cloudHubDeployment>
-   </configuration>
-   <executions>
-      <execution>
-         <goals>
-            <goal>deploy</goal>
-         </goals>
-      </execution>
-   </executions>
+                        <uri>https://anypoint.mulesoft.com</uri>
+                        <muleVersion>${mule.version}</muleVersion>
+                        <username>${anypoint.username}</username>
+                        <password>${anypoint.password}</password>
+                        <environment>${env}</environment>
+                        <applicationName>${appname}</applicationName>
+                        <businessGroup>${business}</businessGroup>
+                        <workerType>${vCore}</workerType>
+                        <workers>${workers}</workers>
+                        <objectStoreV2>true</objectStoreV2>
+                    </cloudHubDeployment>
+                <classifier>mule-application</classifier>
+                </configuration>
+   
 				
 			</plugin>
 		</plugins>
