@@ -33,16 +33,18 @@
 				<extensions>true</extensions>
 				<configuration>
                     <cloudHubDeployment>
-                        <uri>https://anypoint.mulesoft.com</uri>
-                        <muleVersion>4.3.0</muleVersion>
-                        <username>madhuri1502</username>
-                        <password>Rohan@1234</password>
-                        <environment>Sandbox</environment>
-                        <applicationName>testgit</applicationName>
-                        <businessGroup>xyz</businessGroup>
-                        <workerType>micro</workerType>
-                        <workers>1</workers>
+                        
+			      <uri>https://anypoint.mulesoft.com</uri>
+                        <muleVersion>${mule.version}</muleVersion>
+                        <username>${anypoint.username}</username>
+                        <password>${anypoint.password}</password>
+                        <environment>${env}</environment>
+                        <applicationName>${appname}</applicationName>
+                        <businessGroup>${business}</businessGroup>
+                        <workerType>${vCore}</workerType>
+                        <workers>${workers}</workers>
                         <objectStoreV2>true</objectStoreV2>
+			    
                     </cloudHubDeployment>
                 <classifier>mule-application</classifier>
                 </configuration>
