@@ -38,7 +38,7 @@
                         <username>madhuri1502</username>
                         <password>Rohan@1234</password>
                         <environment>Sandbox</environment>
-                        <applicationName>test_git</applicationName>
+                        <applicationName>testgit</applicationName>
                         <businessGroup>xyz</businessGroup>
                         <workerType>micro</workerType>
                         <workers>1</workers>
